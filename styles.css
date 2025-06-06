@@ -1,1 +1,105 @@
- 
+ .inter-tight {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ * {
+    --soft-green: rgb(192, 204, 155);
+    --strong-green: rgb(135, 163, 48);
+    --text-green: rgb(68, 82, 24);
+    --text-blackish : #243010;
+    --background-light-green: rgb(244, 245, 240);
+    --background-footer:rgb(17, 20, 6);
+    font-family: "Inter Tight", sans-serif;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+#logo-yoogi {
+        height: 29px;
+        width: 87px;
+    } 
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: var(--soft-green);
+    color: var(--text-blackish);
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap : 32px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    
+}
+
+.article {
+    width: 100%;
+    min-width: 358px;
+    height: 100%;
+    background-color: var(--background-light-green);
+    border-radius: 16px; 
+}
+
+.picture-recipe {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+   
+
+}
+
+.article-content {
+    padding: 24px 24px 32px;
+}
+
+footer {
+    background-color: var(--background-footer);
+    color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .article {
+        width: 30%;
+    }
+}
